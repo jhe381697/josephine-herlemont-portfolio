@@ -1,16 +1,22 @@
-import './App.css';
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopyright } from '@fortawesome/free-regular-svg-icons';
+
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Navbar</p>
+        <p>Header</p>
       </header>
       <main className="App-main">
-        <p>Joséphine Herlemont</p>
+        <p>Main</p>
       </main>
       <footer className="App-footer">
-        <p>Copyright</p>
+        <div className="App-footer-copyright">
+          <FontAwesomeIcon className="App-footer-icon" icon={faCopyright} /> Joséphine Herlemont
+        </div>
       </footer>
     </div>
   );
