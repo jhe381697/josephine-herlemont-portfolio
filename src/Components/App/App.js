@@ -1,6 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopyright } from '@fortawesome/free-regular-svg-icons';
-
+import Copyright from '../Copyright/Copyright';
 import './App.scss';
 
 function App() {
@@ -13,9 +11,7 @@ function App() {
         <p>Main</p>
       </main>
       <footer className="App-footer">
-        <div className="App-footer-copyright">
-          <FontAwesomeIcon className="App-footer-icon" icon={faCopyright} /> Joséphine Herlemont
-        </div>
+        <Copyright />
       </footer>
     </div>
   );
